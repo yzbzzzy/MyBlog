@@ -11,11 +11,12 @@
     <groupId>com.daresasuke</groupId>
     <artifactId>blog</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>blog</name>:q
-
+    <name>blog</name>
     <description>blog</description>
     <properties>
         <java.version>11</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
