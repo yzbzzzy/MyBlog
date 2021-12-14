@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://192.168.1.241:3306/Blog
+    url: jdbc:mysql://10.4.65.211:3366/Blog
     username: root
     password: root
   thymeleaf:
