@@ -1,6 +1,7 @@
 package com.daresasuke.blog.dao;
 
 import com.daresasuke.blog.entity.Blog;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  * @author makejava
  * @since 2021-10-31 18:15:05
  */
+@Mapper
 public interface BlogDao {
 
     /**

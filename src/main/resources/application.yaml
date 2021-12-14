@@ -13,4 +13,5 @@ mybatis:
 logging:
   level:
     com.daresasuke.dao: debug
-
+server:
+  port: 80
