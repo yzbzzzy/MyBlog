@@ -9,13 +9,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
 /**
- * 解决跨域请求
+ * 解决跨域
+ * @Author:DareSasuke
+ * @DATA:2021/10/30:22:38
  */
 @Component
 public class CorsFilter implements Filter {
-
+    private  static final String s="OPTIONS";
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
@@ -24,7 +25,7 @@ public class CorsFilter implements Filter {
         res.addHeader("Access-Control-Allow-Origin", "*");
         res.addHeader("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");
         res.addHeader("Access-Control-Allow-Headers", "Content-Type,X-CAF-Authorization-Token,sessionToken,X-TOKEN");
-        if (((HttpServletRequest) request).getMethod().equals("OPTIONS")) {
+        if (s.equals(((HttpServletRequest) request).getMethod())) {
             response.getWriter().println("ok");
             return;
         }

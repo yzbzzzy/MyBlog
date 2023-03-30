@@ -14,4 +14,8 @@ logging:
   level:
     com.daresasuke.dao: debug
 server:
-  port: 80
+  port: 8080
+#  ssl:
+#    key-store: classpath:spring-dsrank-cn-tomcat-1215171226.jks
+#    keyStoreType: JKS
+#    key-store-password: springboot

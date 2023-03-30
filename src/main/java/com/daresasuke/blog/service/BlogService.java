@@ -52,5 +52,9 @@ public interface BlogService {
      */
     boolean deleteById(Integer id);
 
+    /**
+     * 查询所有blog
+     * @return
+     */
     List<Blog> queryAll();
 }

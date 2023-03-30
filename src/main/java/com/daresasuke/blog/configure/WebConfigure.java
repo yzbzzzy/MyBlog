@@ -7,7 +7,10 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-
+/**
+ * @Author:DareSasuke
+ * @DATA:2021/10/30:22:38
+ */
 
 
 @Configuration
